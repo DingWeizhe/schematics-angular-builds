@@ -26,7 +26,7 @@ import { Component } from '@angular/core';
      %><router-outlet></router-outlet><%
     } %>
   `,<% } else { %>
-  templateUrl: './app.component.html',<% } if(inlineStyle) { %>
+  templateUrl: './app.component.pug',<% } if(inlineStyle) { %>
   styles: []<% } else { %>
   styleUrls: ['./app.component.<%= styleext %>']<% } %>
 })

@@ -7,7 +7,7 @@ import { Component, OnInit<% if(!!viewEncapsulation) { %>, ViewEncapsulation<% }
       <%= dasherize(name) %> works!
     </p>
   `,<% } else { %>
-  templateUrl: './<%= dasherize(name) %>.component.html',<% } if(inlineStyle) { %>
+  templateUrl: './<%= dasherize(name) %>.component.pug',<% } if(inlineStyle) { %>
   styles: []<% } else { %>
   styleUrls: ['./<%= dasherize(name) %>.component.<%= styleext %>']<% } %><% if(!!viewEncapsulation) { %>,
   encapsulation: ViewEncapsulation.<%= viewEncapsulation %><% } if (changeDetection !== 'Default') { %>,
